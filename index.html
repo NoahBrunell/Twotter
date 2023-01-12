@@ -5,12 +5,72 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+  </style>
+
   <title>Twotter</title>
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-  <h1 class="text-9xl">Twotter</h1>
+<body class="flex justify-center items-start gap-4">
+
+  <section class="top-4 sticky">
+    <img src="logo.png" alt="logo" class="w-16">
+  </section>
+
+
+  <main class="max-w-[598px] w-full border-x border-gray-200 p-4">
+    <h1 class="font-bold text-2xl">Tweets</h1>
+
+
+    <ul class="space-y-6 mt-6">
+      <li class="flex gap-4 items-start border-b pb-4">
+        <img src="logo.png" alt="" class="w-12 h-12 bg-gray-300 rounded-full">
+        <div>
+          <div class="flex gap-4 text-gray-500">
+            <span class="font-semibold text-black">Matti Mäkäläinen</span>
+            <span>@matti94</span>
+            <span>14:31</span>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas expedita facere rem eveniet ullam
+            itaque libero, quaerat neque iste, distinctio veritatis? In incidunt necessitatibus deleniti numquam
+            voluptate, assumenda porro sed!</p>
+          <div class="flex imtes-center gap-2">
+            <i class="ph-heart text-xl"></i>
+            <span class="text-sm">23</span>
+          </div>
+        </div>
+      </li>
+      <li class="flex gap-4">
+        <img src="logo.png" alt="" class="w-12 h-12 bg-gray-300 rounded-full">
+        <div>
+          <div class="flex gap-4 text-gray-500">
+            <span class="font-semibold text-black">Matti Mäkäläinen</span>
+            <span>@matti94</span>
+            <span>14:31</span>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas expedita facere rem eveniet ullam
+            itaque libero, quaerat neque iste, distinctio veritatis? In incidunt necessitatibus deleniti numquam
+            voluptate, assumenda porro sed!</p>
+          <div class="flex imtes-center gap-2">
+            <i class="ph-heart text-xl"></i>
+            <span class="text-sm">23</span>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </main>
+
+
+  <section class="bg-green-400 top-4 sticky">
+    <div class="">Log in</div>
+  </section>
+
   <script type="module" src="/main.js"></script>
+  <script src="https://unpkg.com/phosphor-icons"></script>
 </body>
 
 </html>
